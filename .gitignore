@@ -1,0 +1,8 @@
+# Node Packages
+node_modules
+
+# Dev Files
+.next
+
+# Build Files
+dist
