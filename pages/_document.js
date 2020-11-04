@@ -1,5 +1,5 @@
-import Document, { Head, Main, NextScript } from "next/document";
-import { ServerStyleSheet } from "styled-components";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -28,30 +28,30 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html lang="en-US">
+      <Html lang='en-US'>
         <Head>
-          <meta charSet="utf-8" />
-          <meta name="application-name" content="PROJECT_NAME" />
-          <meta name="theme-color" content="#f50076" />
-          <meta name="author" content="Pushpendra Singh"></meta>
-          <meta name="keywords" content="React, Nextjs, Starter" />
+          <meta charSet='utf-8' />
+          <meta name='application-name' content='PROJECT_NAME' />
+          <meta name='theme-color' content='#f50076' />
+          <meta name='author' content='Pushpendra Singh'></meta>
+          <meta name='keywords' content='React, Nextjs, Starter' />
           {/* <meta
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width, viewport-fit=cover"
           /> */}
-          <link rel="icon" href="./favicon.ico" />
-          <link rel="manifest" href="/manifest.json" />
+          <link rel='icon' href='./favicon.ico' />
+          <link rel='manifest' href='/manifest.json' />
           <link
-            rel="apple-touch-icon"
-            sizes="192x192"
-            href="/icons/icons-192.png"
+            rel='apple-touch-icon'
+            sizes='192x192'
+            href='/icons/icons-192.png'
           />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }
